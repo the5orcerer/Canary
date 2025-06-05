@@ -29,13 +29,13 @@ go install github.com/the5orcerer/Canary@latest
 ## 🧑‍💻 Usage
 
 ```bash
-cat urls.txt | ./canary -oa .oast.me -c timestamp -o output.txt
+cat urls.txt | canary -oa .oast.me -c timestamp -o output.txt
 ```
 
 Or with raw HTTP request input:
 
 ```bash
-./canary -f raw_requests.txt -r -oa .oast.me -c mytoken -a -k -l log.txt
+canary -f raw_requests.txt -r -oa .oast.me -c mytoken -a -k -l log.txt
 ```
 
 ---
