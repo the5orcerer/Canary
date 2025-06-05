@@ -70,19 +70,19 @@ Or with raw HTTP request input:
 Inject a timestamp-based token into all parameters:
 
 ```bash
-cat urls.txt | ./canary -oa .oast.site -c timestamp -o output.txt
+cat urls.txt | canary -oa .oast.site -c timestamp -o output.txt
 ```
 
 Use a static token with a suffix and delimiter:
 
 ```bash
-cat list.txt | ./canary -oa .oast.live -c mycanary -s ".track" -d "-" -o traced.txt
+cat list.txt | canary -oa .oast.live -c mycanary -s ".track" -d "-" -o traced.txt
 ```
 
 Use range-based canary tokens on only specific parameters:
 
 ```bash
-./canary -f data.txt -c 1-100 -t id,user -a -k -oa .oast.me -l changed.log
+canary -f data.txt -c 1-100 -t id,user -a -k -oa .oast.me -l changed.log
 ```
 
 ---
@@ -99,12 +99,6 @@ Use range-based canary tokens on only specific parameters:
 
 Found a bug or want to improve it? PRs are welcome!
 Help evolve this tool for the bounty hunting community.
-
----
-
-## 📜 License
-
-MIT License — use freely, contribute responsibly.
 
 ---
 
