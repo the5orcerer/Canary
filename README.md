@@ -21,9 +21,7 @@ Perfect for bug bounty hunters to detect SSRF, XSS, and other data-leaking vulne
 Clone the repository and build the binary:
 
 ```bash
-git clone https://github.com/yourusername/canary.git
-cd canary
-go build -o canary
+go install github.com/the5orcerer/Canary@latest
 ````
 
 ---
