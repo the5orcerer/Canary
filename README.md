@@ -1,4 +1,3 @@
-````markdown
 # 🐦 Canary - OAST Canary Token Injector for Bug Bounty Hunting
 
 Canary is a blazing-fast, multithreaded Go tool designed to inject OAST-powered canary tokens into URLs or raw HTTP requests.  
